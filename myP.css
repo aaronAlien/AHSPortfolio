@@ -1,0 +1,245 @@
+:root {
+  --dark-container: #212529;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(69, 40, 130);
+  background: radial-gradient(
+    circle,
+    rgba(69, 40, 130, 1) 6%,
+    rgba(92, 63, 160, 1) 22%,
+    rgba(165, 136, 252, 1) 72%,
+    rgba(184, 188, 189, 1) 100%
+  );
+}
+
+main {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.nes-balloon {
+  margin-top: 2rem;
+}
+
+.grid-container
+.nes-container, .nav-container-home{
+  background-color: #fff;
+}
+
+.nav-container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+  padding: 0.5rem;
+}
+
+.nav-container img {
+  display: block;
+  margin: 0 auto;
+  width: 290px;
+}
+
+#btns-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#btns-list ul {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#btns-list li {
+  margin: 0.75rem;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.nav-container-contact {
+  margin-bottom: 4rem;
+}
+
+.grid-container-contact {
+  background-color: transparent;
+}
+
+.grid-container, .grid-container-contact {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1.5rem;
+  margin: 2rem auto;
+}
+
+.grid-one {
+  grid-column: 1;
+}
+
+.grid-one p {
+  text-align: left;
+}
+
+.grid-two {
+  grid-column: 1 / 3;
+}
+
+.grid-stack {
+  grid-column: 2;
+}
+
+.grid-contact {
+  grid-column: 1 / 3;
+  margin: 3rem auto;
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /*border: 2px solid red;*/
+}
+
+.logos-container img {
+  width: 90px;
+  display: inline;
+  margin: 0.5rem;
+  image-rendering: pixelated;
+  padding: 0;
+}
+
+.currently {
+  grid-column: 1 / 3;
+  right: 0;
+  left: 0;
+}
+
+.carousel-container {
+  grid-column: 1 / 3;
+  max-width: 100%;
+  margin: 0 auto;
+  /*padding: 20px;*/
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.carousel-inner img:hover {
+  opacity: 70%;
+}
+
+.card {
+  padding: 15px;
+  color: #000;
+  background: rgb(246,246,246);
+  background: linear-gradient(0deg, rgba(246,246,246,0.6460959383753502) 23%, rgba(152,151,151,0.8365721288515406) 35%, rgba(84,83,83,0.9037990196078431) 54%, rgba(52,52,52,0.9037990196078431) 68%, rgba(23,23,23,0.8729866946778712) 89%);
+  
+  /*border: 1px solid #a30505;*/
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(101, 101, 101, 0.516);
+  margin: 10px;
+  flex: 0 0 350px; /* adjust the width of each card */
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  padding: 2px;
+  background-color: #000;
+  /*border: 1px solid #ddd;*/
+  box-shadow: 0 0 5px rgba(101, 101, 101, 0.516);
+}
+
+.card h2 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 14px;
+  color: #000;
+}
+
+
+footer {
+  width: 100%;
+  border-top: 4px solid #000;
+  background-color: #ffffff94;
+  margin-top: 3rem;
+  padding: 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-content ul,
+li {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  margin: 1.5rem;
+}
+
+@media only screen and (max-width: 425px) {
+
+  body {
+    display: block;
+  }
+  .nav-container {
+    display: block;
+  }
+  .nav-container img {
+    max-width: 190px;
+  }
+  #btns-list li {
+    flex: 0 0 100%;
+  }
+  .grid-container,.grid-container-contact {
+    grid-template-columns: 1fr; /* Change to a single column */
+  }
+ .grid-one,.grid-two,.grid-stack,.grid-contact {
+    grid-column: 1; /* Make all grid items span the full width */
+  }
+}
+
+
+/*.nes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  text-align: center;
+} */
