@@ -255,32 +255,40 @@ li {
 
 @media only screen and (max-width: 425px) {
 
-  body {
+  main, body, .grid-container, .nav-container, .grid-contact {
     display: block;
-  }
-  .nav-container {
-    display: block;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
   }
   .nav-container img {
     max-width: 190px;
   }
-  #btns-list li {
-    flex: 0 0 100%;
+  .nav-container #btns-list li, .nav-container-contact #btns-list li, #btns-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
   }
+
   .grid-container,.grid-container-contact {
-    grid-template-columns: 1fr; /* Change to a single column */
+    grid-template-columns: 1fr; 
+    margin: 0 1rem;
   }
  .grid-one,.grid-two,.grid-stack,.grid-contact {
-    grid-column: 1; /* Make all grid items span the full width */
+    grid-column: 1; 
+  }
+
+  .grid-two, .currently-card {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .currently-card img {
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
-
-
-/*.nes-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 100%;
-  text-align: center;
-} */
