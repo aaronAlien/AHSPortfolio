@@ -229,6 +229,10 @@ main {
   margin: 0 auto;
 }
 
+#my-pop {
+  display: none;
+}
+
 footer {
   width: 100%;
   border-top: 4px solid #000;

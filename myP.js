@@ -19,17 +19,16 @@ emailjs.init('_sDMwEekjXEiFCce2');
       .send('service_wfb9o14', 'template_jal1dyd', templateParams) 
       .then((response) => {
         console.log('Email sent successfully!', response);
-        // Append a confirmation message to the DOM
-        const confirmationMessage = document.createElement('div');
-        confirmationMessage.classList.add('nes-container', 'is-dark', 'is-rounded');
-        confirmationMessage.innerHTML = 'Thank you for  you email! I will get back to you soon.';
-        confirmationMessage.style.marginTop('2rem');
-        confirmationMessage.style.color('green');
-        confirmationMessage.style.textTransform('upppercase');
 
-        const formDiv = document.getElementById('form-div');
-        formDiv.appendChild(confirmationMessage);
+        let myPop = document.getElementById('my-pop');
+        myPop.style.display = 'block';
+        myPop.style.margin = '2rem auto';
+        myPop.style.textTransform = 'upppercase';
+        myPop.style.textAlign = 'center';
 
+        //const formDiv = document.getElementById('form-div');
+        //formDiv.appendChild(confirmationMessage);
+        
         form.reset();
       })
       .catch((error) => {
