@@ -1,4 +1,4 @@
-emailjs.init('_sDMwEekjXEiFCce2'); // Replace with your Public Key
+emailjs.init('_sDMwEekjXEiFCce2'); 
 
 (function () {
   const form = document.querySelector('form');
@@ -16,7 +16,7 @@ emailjs.init('_sDMwEekjXEiFCce2'); // Replace with your Public Key
     };
 
     emailjs
-      .send('service_wfb9o14', 'template_jal1dyd', templateParams) // Replace with your Service ID and Template ID
+      .send('service_wfb9o14', 'template_jal1dyd', templateParams) 
       .then((response) => {
         console.log('Email sent successfully!', response);
         // Append a confirmation message to the DOM
