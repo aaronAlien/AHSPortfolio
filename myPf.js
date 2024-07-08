@@ -1,4 +1,4 @@
-emailjs.init('_sDMwEekjXEiFCce2'); 
+emailjs.init(process.env.EMAIL_JS_INIT); 
 
 (function () {
   const form = document.querySelector('form');
@@ -16,7 +16,7 @@ emailjs.init('_sDMwEekjXEiFCce2');
     };
 
     emailjs
-      .send('service_wfb9o14', 'template_jal1dyd', templateParams) 
+      .send(process.env.EMAIL_JS_SERVICE, process.env.EMAIL_JS_TEMPLATE, templateParams) 
       .then((response) => {
         console.log('Email sent successfully!', response);
 
