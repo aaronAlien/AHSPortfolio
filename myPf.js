@@ -25,9 +25,6 @@ emailjs.init(process.env.EMAIL_JS_INIT);
         myPop.style.margin = '2rem auto';
         myPop.style.textTransform = 'upppercase';
         myPop.style.textAlign = 'center';
-
-        //const formDiv = document.getElementById('form-div');
-        //formDiv.appendChild(confirmationMessage);
         
         form.reset();
       })
